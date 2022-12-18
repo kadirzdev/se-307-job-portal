@@ -22,5 +22,12 @@ public class Job
         JobSalary = jobSalary;
         JobCompany = jobCompany;
     }
+    
+    // Display Job Details in a List
+    public override string ToString()
+    {
+        return $"Job ID: {JobId} | Job Title: {JobTitle} | Job Description: {JobDescription} | Job Location: {JobLocation} | Job Experience: {JobExperience} | Job Salary: {JobSalary} | Job Company: {JobCompany}";
+    }
+
 
 }
