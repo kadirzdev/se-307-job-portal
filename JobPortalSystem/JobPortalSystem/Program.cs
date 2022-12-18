@@ -8,9 +8,12 @@ namespace JobPortalSystem
         static void Main(string[] args)
         {
             // Create a new instance of the Job Class
-            Job job2 = new Job(22, "Job Title", "Job Description", "Job Location", "Title", "Title", "Title");
+            JobSeeker jobSeeker = new JobSeeker("Kadir", "kadir@kadir.com", "05233574657", Resume);
             
-            Console.WriteLine(job2.JobDescription);
+            
+            Job job1 = new Job(22, "Job Title", "Job Description", "Job Location", 2, 5, "Microsoft");
+            
+            Console.WriteLine(jobSeeker.Resume);
             
             
 
