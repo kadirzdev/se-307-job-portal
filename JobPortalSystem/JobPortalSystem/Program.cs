@@ -35,6 +35,11 @@ namespace JobPortalSystem
                 Console.WriteLine(job);
             }
             
+            // 2 tane user tipi : OOP - Inheritance
+            // Keep datas in file
+            // Export CV
+            
+            
 
 
             
