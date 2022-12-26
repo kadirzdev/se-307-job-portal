@@ -11,8 +11,9 @@ public class Job
     public string JobExperience { get; set; }
     public string JobSalary { get; set; }
     public string JobCompany { get; set; }
+    public static List<JobSeeker>? jobSeekersList = new List<JobSeeker>();
 
-    
+
     public Job(int jobId, string jobTitle, string jobDescription, string jobLocation, string jobExperience, string jobSalary, string jobCompany)
     {
         JobId = jobId;
@@ -22,6 +23,7 @@ public class Job
         JobExperience = jobExperience;
         JobSalary = jobSalary;
         JobCompany = jobCompany;
+        jobSeekersList = null;
     }
    
 

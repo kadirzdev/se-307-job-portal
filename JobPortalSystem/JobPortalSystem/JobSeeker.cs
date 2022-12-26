@@ -8,6 +8,7 @@ public class JobSeeker : User
     public string Phone { get; set; }
     public string Password { get; set; }
     public byte Type { get; set; }
+    
 
     /*  public JobSeeker(string name,string email,string phone)
       {
