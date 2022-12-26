@@ -23,5 +23,6 @@ public class Job
         JobSalary = jobSalary;
         JobCompany = jobCompany;
     }
+   
 
 }

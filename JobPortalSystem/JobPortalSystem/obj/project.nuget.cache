@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "snX2TVPeaNPLPsbhUUu6CScsUWvK7T9fm8juItP25PpTR7EsQifa1xafp/B8j6eF12mUAgytEQQDvJZWepJQKQ==",
+  "dgSpecHash": "i7rPDQ42VYgDIpvX+6XBeoh8v7L+KV70I0NVFJH3N+jjNniCMBRqRMZfne1KwVAywKqjq5KTBo8yUKtVKyB4rA==",
   "success": true,
-  "projectFilePath": "/Users/kadirz/Projects/college/se-307-job-portal/JobPortalSystem/JobPortalSystem/JobPortalSystem.csproj",
+  "projectFilePath": "C:\\Users\\DELL\\source\\repos\\se-307-job-portal\\JobPortalSystem\\JobPortalSystem\\JobPortalSystem.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Önbellek dosyası C:\\Users\\DELL\\source\\repos\\se-307-job-portal\\JobPortalSystem\\JobPortalSystem\\obj\\project.nuget.cache okunurken bir sorun oluştu : Kod çözülürken geçersiz veri bulundu."
+    }
+  ]
 }
