@@ -16,6 +16,8 @@ namespace JobPortalSystem
         public string Phone { get; set; }
         public string Password { get; set; }
         public byte Type { get; set; }
+        public static List<Job> jobList = new List<Job>();
+
 
 
         /* public Employer(string name, string email, string phone)
@@ -29,6 +31,45 @@ namespace JobPortalSystem
         {
             Console.WriteLine(Name + "" + Email + "" + Phone + "" );
         }
+        public static void PostJobOpenings()
+        {
+            Console.WriteLine("İs basligi girin");
+            var jobTitle = Console.ReadLine();
+            Console.WriteLine("İs aciklamasını girin");
+            var jobDesciription = Console.ReadLine();
+            Console.WriteLine("İs kounumunu girin");
+            var jobLocation = Console.ReadLine();
+            Console.WriteLine("İs tecrübesini girin");
+            var  jobExperience = Console.ReadLine();
+            Console.WriteLine("İs maaş aralığını girin");
+            var jobSalary = Console.ReadLine();
+            Console.WriteLine("İs ismini girin");
+            var jobCompany = Console.ReadLine();
+            Job job = new Job(1,jobTitle??"-" ,jobDesciription??"-",jobLocation ?? "-",jobExperience ?? "-",jobSalary ?? "-",jobCompany ?? "-");
+            jobList.Add(job);
+           // Console.WriteLine(job);
+
+        }
+        public void searchCandidates()
+        {
+           foreach(Job job in jobList)
+            {
+                Console.WriteLine(job.JobTitle +""+job.JobId);
+
+            }
+            Console.WriteLine("Görünütlemek istediğiniz işlemin ID'sini seçin");
+            var getJobId = Convert.ToInt32(Console.ReadLine());
+            foreach (Job job in jobList)
+            {
+                if(job.JobId == getJobId)
+                {
+                    Console.WriteLine(Job.jobSeekersList);
+                }
+            }
+            
+
+        }
+
 
     }
 }

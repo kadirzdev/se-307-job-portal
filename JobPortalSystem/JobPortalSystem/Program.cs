@@ -12,6 +12,7 @@ namespace JobPortalSystem
         {
             // Create a new instance of the Job Class
             Job job2 = new Job(22, "Job Title", "Job Description", "Job Location", "Title", "Title", "Title");
+           
             
             Console.WriteLine(job2.JobDescription);
             
@@ -51,7 +52,27 @@ namespace JobPortalSystem
                             }
                             else if( user2.Type == 2)
                             {
-                                Console.WriteLine("Employer girdi");
+                                Console.WriteLine(" İşlem seçin");
+                                Console.WriteLine(" 1 - İş ilanı oluştur");
+                                Console.WriteLine(" 2 - İş başvurusu yapanları görüntüle");
+                                int input  = Convert.ToInt32(Console.ReadLine());
+                                switch (input){
+                                    case 1 :
+                                       
+                                        Employer.PostJobOpenings();
+                                        Console.WriteLine("İlan başarıyla oluşturuldu");
+                                        break;
+                                    case 2 :
+                                        Console.WriteLine("İş başvurusu yapanları görüntüle");
+
+                                        break;
+                                        default : Console.WriteLine("geçersiz işlem");
+                                        break;
+
+
+                                } 
+                                Employer.PostJobOpenings();
+                                //Console.WriteLine("Employer girdi");
 
 
                             }
