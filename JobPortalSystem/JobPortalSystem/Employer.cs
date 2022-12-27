@@ -18,7 +18,7 @@ namespace JobPortalSystem
         public byte Type { get; set; }
         public static List<Job> jobList = new List<Job>();
 
-
+    
 
         /* public Employer(string name, string email, string phone)
          {
@@ -26,6 +26,7 @@ namespace JobPortalSystem
              Email = email;
              Phone = phone;
          }*/
+        
 
         public void showUserDetails()
         {
