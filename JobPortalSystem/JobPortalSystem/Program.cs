@@ -33,50 +33,65 @@ namespace JobPortalSystem
             admin.AddUser(sirket1);
             admin.AddUser(sirket2);
             admin.AddUser(admin);
-            Console.WriteLine("Kullanıcı adı giriniz");
+            Console.WriteLine("Enter Username");
             var x = Console.ReadLine();
             foreach (User user in admin.UsersList)
             {
                 if (x == user.Name)
                 {
-                    Console.WriteLine("Sifre girin");
+                    Console.WriteLine("Password");
                     var y = Console.ReadLine();
                     foreach(User user2 in admin.UsersList)
                     {
                         if(y == user2.Password && user2.Name==x) {
-                            Console.WriteLine("GİRİS BASARILI");
+                            Console.WriteLine("LOGIN SUCCESSFUL");
                             if (user2.Type == 1)
                             {
-                                Console.WriteLine("Jobseeker girdi");
+                                Console.WriteLine("Welcome Jobseeker");
                                 
                             }
                             else if( user2.Type == 2)
                             {
-                                Console.WriteLine(" İşlem seçin");
-                                Console.WriteLine(" 1 - İş ilanı oluştur");
-                                Console.WriteLine(" 2 - İş başvurusu yapanları görüntüle");
-                                int input  = Convert.ToInt32(Console.ReadLine());
-                                switch (input){
-                                    case 1 :
+                                for (;;)
+                                {
+                                    Console.WriteLine("Choose Action:");
+                                    Console.WriteLine(" 1 - Add Job");
+                                    Console.WriteLine(" 2 - Delete Job");
+                                    Console.WriteLine(" 3 - Show Applications");
+                                    Console.WriteLine(" 4 - Show Job List");
+                                    int input  = Convert.ToInt32(Console.ReadLine());
+                                    switch (input){
+                                        case 1 :
                                        
-                                        Employer.PostJobOpenings();
-                                        Console.WriteLine("İlan başarıyla oluşturuldu");
-                                        break;
-                                    case 2 :
-                                        Console.WriteLine("İş başvurusu yapanları görüntüle");
-
-                                        break;
-                                        default : Console.WriteLine("geçersiz işlem");
-                                        break;
-
-
-                                } 
-                                Employer.PostJobOpenings();
-                                //Console.WriteLine("Employer girdi");
+                                            Employer.PostJobOpenings();
+                                            Console.WriteLine("Job Listing Successful");
+                                            break;
+                                        case 2 :
+                                            Employer.DeleteJobOpenings();
+                                            Console.WriteLine("Job Listing Deleted");
+                                            break;
+                                        case 3 :
+                                            Console.WriteLine("Applications");
+    
+                                            break;
+                                        case 4 :
+                                            Employer.ShowJobOpenings();
+                                            Console.WriteLine("Active Jobs List");
+                                            break;
+                                    
+                                        default : Console.WriteLine("WTF ARE YOU DOING?");
+                                            break;
+                                    
+                                    } 
+                                }
+                                
+                                
+                                // TODO: AFTER IS ILANI OLUSTUR
+                                Console.WriteLine("BITTI GITTI");
 
 
                             }
-                            else { Console.WriteLine("Admin girdi"); }
+                            else { Console.WriteLine("Admin HERE!"); }
                         }
                     }
                 }

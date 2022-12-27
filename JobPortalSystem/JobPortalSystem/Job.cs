@@ -25,6 +25,12 @@ public class Job
         JobCompany = jobCompany;
         jobSeekersList = null;
     }
+    
+    // Display Job Details in one line
+    public void DisplayJob()
+    {
+        Console.WriteLine($"Job ID: {JobId} | Job Title: {JobTitle} | Job Description: {JobDescription} | Job Location: {JobLocation} | Job Experience: {JobExperience} | Job Salary: {JobSalary} | Job Company: {JobCompany}");
+    }
    
 
 }

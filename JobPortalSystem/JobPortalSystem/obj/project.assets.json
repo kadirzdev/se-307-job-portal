@@ -8,26 +8,25 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+    "/Users/kadirz/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\se-307-job-portal\\JobPortalSystem\\JobPortalSystem\\JobPortalSystem.csproj",
+      "projectUniqueName": "/Users/kadirz/Projects/college/se-307-job-portal/JobPortalSystem/JobPortalSystem/JobPortalSystem.csproj",
       "projectName": "JobPortalSystem",
-      "projectPath": "C:\\Users\\DELL\\source\\repos\\se-307-job-portal\\JobPortalSystem\\JobPortalSystem\\JobPortalSystem.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\source\\repos\\se-307-job-portal\\JobPortalSystem\\JobPortalSystem\\obj\\",
+      "projectPath": "/Users/kadirz/Projects/college/se-307-job-portal/JobPortalSystem/JobPortalSystem/JobPortalSystem.csproj",
+      "packagesPath": "/Users/kadirz/.nuget/packages/",
+      "outputPath": "/Users/kadirz/Projects/college/se-307-job-portal/JobPortalSystem/JobPortalSystem/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/kadirz/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -60,16 +59,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Önbellek dosyası C:\\Users\\DELL\\source\\repos\\se-307-job-portal\\JobPortalSystem\\JobPortalSystem\\obj\\project.nuget.cache okunurken bir sorun oluştu : Kod çözülürken geçersiz veri bulundu."
-    }
-  ]
+  }
 }

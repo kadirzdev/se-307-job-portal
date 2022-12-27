@@ -50,6 +50,34 @@ namespace JobPortalSystem
            // Console.WriteLine(job);
 
         }
+        
+        public static void ShowJobOpenings()
+        {
+            foreach (Job job in jobList)
+            {
+                job.DisplayJob();
+            }
+        }
+
+        public static void DeleteJobOpenings()
+        {
+            Console.WriteLine("Please enter the job ID you want to delete");
+            int jobId =  Convert.ToInt32(Console.ReadLine());
+            foreach (Job job in jobList)
+            {
+                if (job.JobId == jobId)
+                {
+                    jobList.Remove(job);
+                    Console.WriteLine("Job Deleted");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Job not found");
+                }
+            }
+        }
+        
         public void searchCandidates()
         {
            foreach(Job job in jobList)
