@@ -10,31 +10,25 @@ namespace JobPortalSystem
   public class JobSeeker : User
   {
 
-    public string Name { get; set; }
-    public string Email { get; set; }
-    public string Phone { get; set; }
-    public string Password { get; set; }
-    public byte Type { get; set; }
+    public string? Name { get; set; }
+    public string? Email { get; set; }
+    public string? Phone { get; set; }
+    public string? Password { get; set; }
+    public string? Sector { get; set; }
+    public string Location { get; set; }
+    public int Experience { get; set; }
 
-    public void JobSeekerInfo(string name, string email, string phone, string password)
+
+    public void JobSeekerInfo(string name, string email, string phone, string password, string sector, string location, int experience)
     {
       Name = name;
       Email = email;
       Phone = phone;
       Password = password;
+      Sector = sector;
+      Location = location;
+      Experience = experience;
     }
-
-    // Resume Object
-    // public Resume Resume { get; set; }
-    /* public JobSeeker(string name, string email, string phone );//Resume resume)
-     {
-         Name = name;
-         Email = email;
-         Phone = phone;
-         //Resume = resume;
-     }
-
-     */
     public static void searchJob()
     {
       foreach (Job joblist in Employer.jobList)
@@ -42,34 +36,33 @@ namespace JobPortalSystem
         joblist.DisplayJob();
       }
     }
-
     public static void ApplyJob()
     {
-      Console.Write("Enter which job if you want to apply");
+      Console.WriteLine("Select Job ID to apply");
       var _jobid = Convert.ToInt32(Console.ReadLine());
-
+      
       foreach (Job joblist in Employer.jobList)
       {
-        if(joblist.JobId == _jobid)
+        if (joblist.JobId == _jobid)
         {
           Console.WriteLine("Apply Succesful");
           break;
         }
-        else if(joblist.JobId != _jobid)
+        else if (joblist.JobId != _jobid)
         {
-          
+
         }
-        else 
+        else
         {
-          Console.WriteLine("Ýnvalid job id");
+          Console.WriteLine("Invalid job id");
 
         }
       }
     }
-
-    public void showUserDetails()
+    // Show JobSeeker Details in one row
+    public void DisplayUser()
     {
-      Console.WriteLine(Name + "" + Email + "" + Phone + "");//+ Resume);
+      Console.WriteLine($"Name: {Name} | Email: {Email} | Phone: {Phone} | Sector: {Sector} | Location: {Location} | Experience: {Experience}");
     }
 
   }

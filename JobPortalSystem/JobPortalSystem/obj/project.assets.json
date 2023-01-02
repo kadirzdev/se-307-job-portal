@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kadirz/Projects/college/se-307-job-portal/JobPortalSystem/JobPortalSystem/JobPortalSystem.csproj",
+      "projectUniqueName": "/Users/kadirz/Desktop/se-307-job-portal-main/JobPortalSystem/JobPortalSystem/JobPortalSystem.csproj",
       "projectName": "JobPortalSystem",
-      "projectPath": "/Users/kadirz/Projects/college/se-307-job-portal/JobPortalSystem/JobPortalSystem/JobPortalSystem.csproj",
+      "projectPath": "/Users/kadirz/Desktop/se-307-job-portal-main/JobPortalSystem/JobPortalSystem/JobPortalSystem.csproj",
       "packagesPath": "/Users/kadirz/.nuget/packages/",
-      "outputPath": "/Users/kadirz/Projects/college/se-307-job-portal/JobPortalSystem/JobPortalSystem/obj/",
+      "outputPath": "/Users/kadirz/Desktop/se-307-job-portal-main/JobPortalSystem/JobPortalSystem/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/kadirz/.nuget/NuGet/NuGet.Config"

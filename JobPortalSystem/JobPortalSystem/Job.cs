@@ -12,8 +12,7 @@ public class Job
   public string JobSalary { get; set; }
   public string JobCompany { get; set; }
 
-  public static List<string> jobSeekersList = new List<string>();
-
+  public static List<JobSeeker> jobSeekersList = new List<JobSeeker>();
 
   public Job(int jobId, string jobTitle, string jobDescription, string jobLocation, string jobExperience, string jobSalary, string jobCompany)
   {
@@ -25,12 +24,17 @@ public class Job
     JobSalary = jobSalary;
     JobCompany = jobCompany;
   }
-
   // Display Job Details in one line
   public void DisplayJob()
   {
     Console.WriteLine($"Job ID: {JobId} | Job Title: {JobTitle} | Job Description: {JobDescription} | Job Location: {JobLocation} | Job Experience: {JobExperience} | Job Salary: {JobSalary} | Job Company: {JobCompany}");
   }
-
-
+  // Display jobSeekersList in one line
+  public static void DisplayJobAppUser()
+  {
+    foreach (JobSeeker jobSeeker in jobSeekersList)
+    {
+      Console.WriteLine(jobSeeker);
+    }
+  }
 }
